@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 4000;
 app.use(bodyParser.json());
 
 // MongoDB connection (replace 'YOUR_MONGODB_URI' with your MongoDB connection string)
-mongoose.connect('mongodb+srv://divyanshu:divyanshu@cluster0.57fvbtj.mongodb.net/', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongo_url', { useNewUrlParser: true, useUnifiedTopology: true });
 
 //models
 const translationSchema = new mongoose.Schema({
